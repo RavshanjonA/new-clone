@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'messenger.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="left">
+            <div class="info">
+                <p>shirleyromero</p>
+                <img class="arr" src="{% static '/assets/Icons/Arrow.svg' %}" alt="">
+                <img class="mes" src="{% static '/assets/Icons/NewMessages.svg' %}" alt="">
+            </div>
+            <div class="person">
+                <div class="per">
+                    <img src="{% static '/assets/secondary/Profile-Pic (1).svg' %}" alt="">
+                    <div class="txt">
+                        <p>trerrylucas</p>
+                        <span>Imperdiet in sit rhoncus, eleifend tellu...</span>
+                    </div>
+                </div>
+                <div class="per">
+                    <img src="{% static '/assets/secondary/Profile-Pic (3).svg' %}" alt="">
+                    <div class="txt">
+                        <p>lauramatthews</p>
+                        <span>Augue lectus potenti pellentesque. jdss</span>
+                    </div>
+                </div>
+                <div class="per">
+                    <img src="{% static '/assets/secondary/Profile-Pic (4).svg' %}" alt="">
+                    <div class="txt">
+                        <p>harryprescott</p>
+                        <span>Imperdiet in sit rhoncus, eleifend tellu...</span>
+                    </div>
+                </div>
+                <div class="per">
+                    <img src="{% static '/assets/secondary/Profile-Pic (5).svg' %}" alt="">
+                    <div class="txt">
+                        <p>ednamanz</p>
+                        <span>Imperdiet in sit rhoncus, eleifend tellu...</span>
+                    </div>
+                </div>
+                <div class="per">
+                    <img src="{% static '/assets/secondary/Profile-Pic (6).svg' %}" alt="">
+                    <div class="txt">
+                        <p>christinasterling</p>
+                        <span>Imperdiet in sit rhoncus, eleifend tellu...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="{% static '/assets/Icon.svg' %}" alt="">
+            <p>Your Messages</p>
+            <span>Send private photos and messages to a friend or group.</span>
+            <button>Send Message</button>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{%  static 'myprofile.css' %}"">
+{% endblock %}
+{% block content %}
+        <div class="content">
+            <div class="followers">
+                <img src="{% static '/assets/Profile-Pic-S.svg' %}" alt="">
+                <div class="text">
+                    <div class="first">
+                        <p>shirleyromero</p>
+                        <button>Edit Profile</button>
+                        <img src="{% static '/assets/Icons/Options.svg' %}" alt="">
+                    </div>
+                    <div class="second">
+                        <p>0 posts</p>
+                        <p>255 followers</p>
+                        <p>500 following </p>
+                    </div>
+                    <div class="third">
+                        <p>Shirley Romero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border2"></div>
+
+        <div class="publick">
+            <div class="toggle">
+                <div class="elements">
+                    <img src="{% static '/assets/Icons/Posts.svg' %}" alt="">
+                    <p>POSTS</p>
+                </div>
+                <div class="elements">
+                    <img src="{% static '/assets/Icons/Save.svg' %}" alt="">
+                    <span>SAVED</span>
+                </div>
+                <div class="elements">
+                    <img src="{% static '/assets/Icons/Tagged.svg' %}" alt="">
+                    <span>TAGGED</span>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="{% static '/assets/image.svg' %}" alt="">
+                <div class="info">
+                    <p>Start capturing and sharing your moments.</p>
+                    <span>Get the app to share your first photo or video.</span>
+                    <div class="row">
+                        <img src="{% static '/assets/Banned.svg' %}" alt="">
+                        <img src="{% static '/assets/Banned2.svg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
